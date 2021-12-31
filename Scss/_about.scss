@@ -1,0 +1,51 @@
+.about {
+   padding-top: 2rem ;
+   margin-bottom: #{"clamp(5rem, 14vw , 10rem)"};
+   .container {
+      justify-content: space-between;
+      p {
+         max-width: 65ch;
+         text-align: justify;
+      }
+      & > :first-child {
+         place-items: center;
+         position: relative;
+         padding: 1rem;
+         & > :first-child {
+            @media (min-width: 62em) {
+               transform: translate3d(calc(1rem + 4%), calc(1rem + 26%), 0px);
+            }
+         }
+      }
+      article {
+         --flow-space: 1.5rem;
+         & > :last-child {
+            margin-top: 1rem;
+         }
+      }
+
+      @media (max-width: 48em) {
+         --flex-gap: 2rem;
+         flex-direction: column;
+         & > :first-child {
+            padding: 0 1rem;
+            & > :first-child {
+               transform: translateY(-10%);
+               & > :first-child {
+                  stroke: black !important;
+               }
+            }
+         }
+      }
+      @media (max-width: 36em) {
+         & > :first-child {
+            position: relative;
+            width: calc(100% + (2 * 0.9375rem));
+            transform: translateX(-0.9375rem);
+         }
+      }
+      @media (min-width: 62em) and (max-width: 75em) {
+         --flex-gap: 4rem;
+      }
+   }
+}

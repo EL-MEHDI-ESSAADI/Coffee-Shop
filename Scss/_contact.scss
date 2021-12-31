@@ -1,0 +1,59 @@
+.contact {
+   padding-top: 1.5rem;
+   margin-block-end: clamp(3.125rem ,11vw, 6.25rem);
+
+   .container {
+      align-items: center;
+      gap: 2rem;
+      & > :first-child {
+         position: relative;
+         flex-shrink: 5;
+         width: 500px;
+         box-shadow: 12px 12px 10px 2px #f6d7d7;
+         @media (max-width: 36em) {
+            box-shadow: 0px 7px 10px 2px #f6d7d7;
+         }
+         #map {
+            height: 300px;
+            border-radius: 5px;
+         }
+
+      }
+      & > :last-child {
+         .infoContainer {
+
+            & > :first-child {
+               width: 100px;
+               transform: translateY(8%);
+               border-top: 2px solid #444A4A;
+            }
+            .contactInfo {
+               flex-shrink: 0;
+               header {
+                  margin-bottom: 1.25rem;
+               }
+               & > :last-child {
+                  line-height: 2;
+               }
+            }
+         }
+
+      }
+   }
+
+   @media (max-width: 48em) {
+
+      .container {
+         flex-direction: column;
+         text-align: center;
+         & > :first-child  {
+            width: 100%;
+         }
+         & > :last-child .infoContainer  > :first-child {
+            display: none;
+         }
+      }
+   }
+}
+
+
