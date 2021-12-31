@@ -115,13 +115,9 @@ body {
    // we choose the font family and size and bg and the color for the Body text because it will repeat a lot.
    font-family: var(--ff-alegerya);
    font-size: var(--fs-300);
-   color: #{"hsl( var(--clr-green) )"};
+   color: #{"hsl( var(--clr-hard-green) )"};
    position: relative ;
    overflow-x: hidden;
-   
-   @media (min-width: 48em) {
-      color: #{"hsl( var(--clr-hard-green) )"};
-   }
 }
 
 p {
