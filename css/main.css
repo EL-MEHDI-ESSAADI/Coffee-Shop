@@ -134,16 +134,12 @@ p {
 body {
   font-family: var(--ff-alegerya);
   font-size: var(--fs-300);
-  color: hsl( var(--clr-green) );
+  color: hsl( var(--clr-hard-green) );
   position: relative;
   overflow-x: hidden;
 }
 
-@media (min-width: 48em) {
-  body {
-    color: hsl( var(--clr-hard-green) );
-  }
-}
+
 
 p {
   line-height: 1.5;
